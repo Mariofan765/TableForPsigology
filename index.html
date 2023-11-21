@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href="style/index.css" rel="stylesheet">
+<body class="body">
+
+<section class="problems">
+    <form class="problems__form">
+        <button type="button" class="problems__button-add border_radius cursor-pointer">Добавить пункт который хотели бы запомнить или отметить</button>
+        <textarea placeholder="Сделайте заметку" class="problems__input border_radius"></textarea>
+        <button type="submit" class="problems__button-add problems__button-add_add border_radius cursor-pointer">Добавить</button>
+    </form>
+</section>
+
+<section class="problems-saved"></section>
+
+<section class="main-table">
+    <div class="main-table__column">
+        <p class="main-table__title">Дата</p>
+    </div>
+    <div class="main-table__column">
+        <p class="main-table__title">Ситуация</p>
+    </div>
+    <div class="main-table__column">
+        <p class="main-table__title">Мысль</p>
+    </div>
+    <div class="main-table__column">
+        <p class="main-table__title">Эмоция</p>
+    </div>
+    <button class="main-table__new-caption">Добавить новую запись</button>
+</section>
+
+</body>
+<script src="scripts/index.js"></script>
+</html>

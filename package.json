@@ -1,0 +1,15 @@
+{
+  "name": "tableforpsigology",
+  "version": "1.0.0",
+  "description": "psihology",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/index.js"
+  },
+  "author": "I",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}
