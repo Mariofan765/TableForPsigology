@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" />
+
 </head>
 <link href="style/index.css" rel="stylesheet">
 <body class="body">
@@ -15,24 +17,66 @@
     </form>
 </section>
 
+<section class="reg-and-log">
+    <button class="reg-and-log__button-reg reg-and-log__btn">Регистрация</button>
+    <button class="reg-and-log__button-log reg-and-log__btn">Вход</button>
+</section>
+
 <section class="problems-saved"></section>
 
 <section class="main-table">
-    <div class="main-table__column">
-        <p class="main-table__title">Дата</p>
+    <div class="main-table__row">
+        <p class="main-table__column">Дата</p>
+        <p class="main-table__column">Ситуация</p>
+        <p class="main-table__column">Мысль</p>
+        <p class="main-table__column">Эмоция</p>
+        <p class="main-table__column">%</p>
     </div>
-    <div class="main-table__column">
-        <p class="main-table__title">Ситуация</p>
-    </div>
-    <div class="main-table__column">
-        <p class="main-table__title">Мысль</p>
-    </div>
-    <div class="main-table__column">
-        <p class="main-table__title">Эмоция</p>
-    </div>
+
     <button class="main-table__new-caption">Добавить новую запись</button>
 </section>
 
+<section class="popup">
+    <div class="popup__div">
+        <h2 class="popup__title">Заполните все поля</h2>
+        <form class="popup__fields">
+            <input class="popup__date id" type="datetime-local"/>
+            <textarea class="popup__situation id"  oninput="this.value = this.value.replace(/\d/g, '')" placeholder="Описание ситуации"></textarea>
+            <textarea class="popup__situation id"  oninput="this.value = this.value.replace(/\d/g, '')" placeholder="Мысль, которая пришла"></textarea>
+            <div class="popup__selection">
+                <textarea class="popup__situation id"  oninput="this.value = this.value.replace(/\d/g, '')" placeholder="Эмоция, которую испытали"></textarea>
+                <select class="popup__select id">
+                    <option>0 ~ 10%</option>
+                    <option>10 ~ 20%</option>
+                    <option>20 ~ 30%</option>
+                    <option>30 ~ 40%</option>
+                    <option>40 ~ 50%</option>
+                    <option>50 ~ 60%</option>
+                    <option>60 ~ 70%</option>
+                    <option>70 ~ 80%</option>
+                    <option>80 ~ 90%</option>
+                    <option>90 ~ 100%</option>
+                </select>
+            </div>
+        </form>
+        <button class="popup__close">Закрыть если передумали)</button>
+        <button class="popup__add">Добавить запись</button>
+    </div>
+</section>
+
+<section class="popup-reg-and-log">
+    <form class="popup-reg-and-log-inner">
+        <p class="popup-reg-and-log__title"></p>
+        <input class="popup-reg-and-log__first-template" required minlength="3" placeholder="Введите логин">
+        <p class="popup-reg-and-log__error-log"></p>
+        <input class="popup-reg-and-log__second-template" type="password" minlength="8" required placeholder="Введите пароль">
+        <p class="popup-reg-and-log__error-log"></p>
+        <button class="popup-reg-and-log__confirm"></button>
+    </form>
+</section>
+
+
+<script src="./scripts/index.js"></script>
+
 </body>
-<script src="scripts/index.js"></script>
 </html>
