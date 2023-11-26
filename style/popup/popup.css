@@ -1,0 +1,228 @@
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup__div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2C0A8;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.popup__fields {
+    display: flex;
+    flex-direction: column;
+}
+.popup__title {
+    color: white;
+    font-size: 40px;
+    margin: 20px 0 20px;
+}
+.popup__situation {
+    outline: none;
+    border: 0;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    resize: none;
+    transition: 0.2s;
+
+}
+.popup__situation:hover {
+    transform: scale(1.1);
+}
+.popup__situation:focus {
+    transform: scale(1.1);
+
+}
+.popup__situation::placeholder {
+    color: #70AB9C;
+}
+.popup__situation:hover::placeholder {
+    color: red;
+    transition: 0.2s;
+
+}
+.popup__situation:focus::placeholder {
+    color: rgba(255, 0, 0, 0.5);
+    transition: 0.2s;
+}
+.popup__date {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: #70AB9C;
+    transition: 0.2s;
+}
+.popup__date:hover {
+    color: red;
+    transition: 0.2s;
+}
+.popup__date::-webkit-calendar-picker-indicator {
+    border: 2px solid #70AB9C;
+    background-color: #70AB9C;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.popup__date:hover::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.popup__select {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #70AB9C;
+    transition: 0.2s;
+}
+.popup__select:hover {
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.popup__selection {
+    display: flex;
+}
+.popup__close {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    color: #70AB9C;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 0 20px 0;
+}
+.popup__close:hover {
+    background-color: #70AB9C;
+    color: white;
+    transition: 0.2s;
+}
+.popup__add {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    color: #70AB9C;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 0 20px 0;
+}
+.popup__add:hover {
+    background-color: #70AB9C;
+    color: white;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.popup-reg-and-log {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+.popup-reg-and-log-inner {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2C0A8;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.popup-reg-and-log__first-template {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 0 15px 0;
+}
+.popup-reg-and-log__first-template::placeholder {
+    color: red;
+    transition: 0.2s;
+}
+.popup-reg-and-log__first-template:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.popup-reg-and-log__first-template:hover::placeholder {
+    color: #70AB9C;
+    transition: 0.2s;
+}
+
+.popup-reg-and-log__second-template {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.popup-reg-and-log__second-template::placeholder {
+    color: red;
+    transition: 0.2s;
+}
+.popup-reg-and-log__second-template:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.popup-reg-and-log__second-template:hover::placeholder {
+    color: #70AB9C;
+    transition: 0.2s;
+}
+.popup-reg-and-log__title {
+    color: white;
+    font-size: 40px;
+    margin: 20px 0 20px;
+}
+.popup-reg-and-log__confirm {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    color: #70AB9C;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 10px 0;
+
+}
+.popup-reg-and-log__confirm:hover {
+    background-color: #70AB9C;
+    color: white;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.popup-reg-and-log__error-log {
+    font-size: 14px;
+    color: red;
+    margin: 10px 0;
+}

@@ -1,0 +1,135 @@
+.problems {
+    height: 500px;
+}
+.problems__input {
+    background-color: #E2C0A8;
+    outline: none;
+    border: none;
+    width: 600px;
+    height: 80px;
+    display: none;
+    margin: 20px 0 0 0;
+    white-space: pre-wrap;
+    resize: none;
+    padding: 15px;
+    opacity: 0;
+}
+.problems__input::-webkit-scrollbar {
+    width: 15px;
+}
+.problems__input::-webkit-scrollbar-track {
+    background-color: #C0B353;
+    border-radius: 0 20px 20px 0;
+}
+.problems__input::-webkit-scrollbar-track:hover {
+    border-radius: 0 20px 20px 0;
+
+}
+.problems__input::-webkit-scrollbar-thumb {
+    background-color: rgba(206, 224, 179, 0.9);
+    border-radius: 0 20px 20px 0;
+}
+
+.problems__input::placeholder {
+    text-align: center;
+    line-height: 80px;
+}
+.problems__button-add {
+    background-color: #E2C0A8;
+    outline: none;
+    width: 300px;
+    height: 80px;
+    border: 3px solid black;
+    transition: 0.2s;
+}
+.problems__button-add:hover {
+    filter: invert(1);
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: 3px solid black;
+}
+.problems__button-add_add {
+    display: none;
+    margin: 25px 0 0 0;
+}
+
+.problems__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+.problems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.problems-saved {
+    border: 5px solid #E2C0A8;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    color: #E2C0A8;
+    font-size: 24px;
+    display: none;
+    flex-direction: column;
+}
+
+.problems-saved__point {
+    display: flex;
+    width: 100%;
+    word-wrap: break-word;
+    align-items: center;
+    padding: 0 0 0 15px;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+.problems-saved__p {
+    word-wrap: break-word;
+    max-width: 90%;
+}
+.problems-saved__del {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 5px solid #E2C0A8;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: .3s;
+}
+.problems-saved__del:hover {
+    background-color: #E2C0A8;
+}
+.problems-saved__del:hover svg {
+    color: #fff;
+}
+.problems-saved__change {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 5px solid #E2C0A8;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: .3s;
+}
+.problems-saved__change:hover {
+    background-color: #E2C0A8;
+}
+.problems-saved__change:hover svg {
+    color: #fff;
+}
+.problems-saved__other-btns {
+    justify-items: flex-end;
+    padding-right: 10px;
+}

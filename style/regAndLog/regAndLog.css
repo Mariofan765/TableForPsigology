@@ -1,0 +1,23 @@
+.reg-and-log {
+    display: flex;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 350px;
+    justify-content: space-evenly;
+}
+.reg-and-log__btn {
+    font-size: 18px;
+    padding: 15px;
+    outline: none;
+    border: 3px solid black;
+    background-color: #E2C0A8;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reg-and-log__btn:hover {
+    filter: invert(1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
