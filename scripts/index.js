@@ -9,14 +9,14 @@ let popupAdd = popup.querySelector(".popup__add")
 let recordsArr = [];
 let problemsArr = [];
 
-fetch('http://mariofan765.tplinkdns.com:3000/data')    .then(response => response.json())
+fetch('http://mariofan765.tplinkdns.com:2000/data')    .then(response => response.json())
     .then((data) => {
         addRecords(data)
         data.forEach(item => problemsArr.push(item))
     })
     .catch(error => console.error('Error:', error));
 
-fetch('http://mariofan765.tplinkdns.com:3000/getRecords')
+fetch('http://mariofan765.tplinkdns.com:2000/getRecords')
     .then((res) => res.json())
     .then((data) => {
         addNewString(data)
@@ -118,7 +118,7 @@ function addProblemToSaved() {
         </button>
         </div>`;
     problemsSaved.appendChild(newProblem);
-    fetch('http://mariofan765.tplinkdns.com:3000/data',
+    fetch('http://mariofan765.tplinkdns.com:2000/data',
             {
             method: 'POST',
             headers: {
@@ -171,7 +171,7 @@ function deleteProblem(e) {
             idUsers = item.id_for_users;
         }
     })
-    fetch('http://mariofan765.tplinkdns.com:3000/delData', {
+    fetch('http://mariofan765.tplinkdns.com:2000/delData', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -294,7 +294,7 @@ popupAdd.addEventListener('click', (e) => {
         popup.querySelector(".popup__date").value = formattedDate;
         fadeIn(popup, 100)
     })
-    fetch('http://mariofan765.tplinkdns.com:3000/addNewCaption', {
+    fetch('http://mariofan765.tplinkdns.com:2000/addNewCaption', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -376,7 +376,7 @@ popupRegOrLog.addEventListener('submit', async  (e) => {
             log: log,
             pas: pas
         }
-        let result = await fetch('http://mariofan765.tplinkdns.com:3000/newUser', {
+        let result = await fetch('http://mariofan765.tplinkdns.com:2000/newUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
